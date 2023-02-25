@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "939062639823",
+    "project_id": "cloudfirestore-d54a4",
+    "storage_bucket": "cloudfirestore-d54a4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:939062639823:android:3a7b0a686c1ae79b904bba",
+        "android_client_info": {
+          "package_name": "com.syfuzzaman.cloudfirestore"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "939062639823-rh5nqdijd1r4u1a2ku640qt5frac5rmq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAyOy73m1hUBfIORe1YwZCaCkTqtRy4JtM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "939062639823-rh5nqdijd1r4u1a2ku640qt5frac5rmq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
