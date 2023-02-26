@@ -6,10 +6,102 @@
     android:layout_height="match_parent"
     tools:context=".HomeActivity">
 
-    <TextView
+    <LinearLayout
+        android:id="@+id/layoutMain"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Hello!"
-        />
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/imgFooter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:paddingStart="30dp"
+        android:paddingEnd="30dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hey, Welcome!"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginBottom="5dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Please insert or update your information."
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_marginBottom="40dp"/>
+        <EditText
+            android:id="@+id/inputName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your name"
+            android:textColor="@color/black"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/edit_text_background"
+            />
+
+        <EditText
+            android:id="@+id/inputPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your phone number"
+            android:textColor="@color/black"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/edit_text_background"
+            android:inputType="number"
+            />
+        <EditText
+            android:id="@+id/inputDesignation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your designation"
+            android:textColor="@color/black"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/edit_text_background"
+            />
+
+        <EditText
+            android:id="@+id/inputCompany"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your company info"
+            android:textColor="@color/black"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/edit_text_background"
+            />
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/blue"
+            android:text="Save"
+            android:layout_marginBottom="50dp"
+            />
+        <Button
+            android:id="@+id/btnLogout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/black"
+            android:text="Logout"
+            android:layout_marginBottom="10dp"
+            />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imgFooter"
+        android:layout_width="0dp"
+        android:layout_height="120dp"
+        android:src="@drawable/wave"
+        android:scaleType="centerCrop"
+        app:layout_constraintTop_toBottomOf="@id/layoutMain"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
